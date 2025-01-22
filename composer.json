@@ -1,0 +1,37 @@
+{
+	"name": "tranxton/add-missing-imports-fixer",
+	"description": "This fixer automatically scans PHP classes to detect and resolve missing use statements for classes. It determines the appropriate namespaces, and dynamically adds use statements where required.",
+	"license": "MIT",
+	"type": "library",
+	"authors": [
+		{
+			"name": "Rustem Akhmetzianov",
+			"email": "rustem.akhmetzianov@gmail.com"
+		}
+	],
+	"require": {
+		"php": "^7.1",
+		"friendsofphp/php-cs-fixer": "^2.19"
+	},
+	"require-dev": {
+		"phpstan/phpstan": "^1.4",
+		"phpstan/phpstan-phpunit": "^1.0",
+		"phpstan/phpstan-strict-rules": "^1.1"
+	},
+	"conflict": {
+		"php": ">7.1"
+	},
+	"config": {
+		"sort-packages": true
+	},
+	"autoload": {
+		"psr-4": {
+			"Tranxton\\AddMissingImportsFixer\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Tranxton\\AddMissingImportsFixer\\Tests\\": "tests/"
+		}
+	}
+}

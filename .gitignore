@@ -1,0 +1,5 @@
+.idea
+
+var
+!var/phpstan/.gitkeep
+!var/phpcs-fixer/.gitkeep
